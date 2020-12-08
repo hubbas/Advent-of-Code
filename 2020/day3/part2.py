@@ -10,5 +10,4 @@ def slope(right, down):
 			hits += 1
 	return hits
 
-print('Part1:', slope(3, 1))
-print('Part2:', slope(1, 1) * slope(3, 1) * slope(5, 1) * slope(7, 1) * slope(1, 2))
+print(slope(1, 1) * slope(3, 1) * slope(5, 1) * slope(7, 1) * slope(1, 2))

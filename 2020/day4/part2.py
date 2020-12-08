@@ -30,5 +30,4 @@ def validate_passport(passport):
 
 	return all(funcs[key](passport[key]) for key in passport)
 
-print('Part1:', len(valid_passports))
-print('Part2:', len(list(filter(validate_passport, valid_passports))))
+print(len(list(filter(validate_passport, valid_passports))))
