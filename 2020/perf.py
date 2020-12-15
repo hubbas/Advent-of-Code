@@ -11,7 +11,7 @@ def time_to_run(func):
 	return wrapper
 
 def memory_allocated(func):
-	def print_snapshot(snapshot, key_type='lineno'):
+	def print_snapshot(snapshot):
 		snapshot = snapshot.filter_traces((
 			tracemalloc.Filter(False, '<frozen importlib._bootstrap>'),
 			tracemalloc.Filter(False, '<unknown>'),
